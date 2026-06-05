@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: oklch(68% 0.16 60);
+  --primary-text-color: #fcf8f1;
+  --secondary: #211914;
+  --secondary-text-color: oklch(98% 0.01 85);
+  --accent: #e7d4bb;
+
+  /* text color */
+  --foreground: #221811;
+  --muted-foreground: #5e534a;
+
+  /* background color */
+  --background: #fefaf1;
+  /* card color */
+  --card: #ffffff;
+  /* text size */
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-h1: 5rem;
+
+  /* font-weight */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  /* line-height */
+  --leading-tight: 1.25;
+  --leading-relaxed: 1.625;
+  /* border-radius */
+  --radius: 0.5rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 2rem;
+
+  --muted: rgb(239, 234, 226);
+  --muted-color: #5e534a;
+
+  --card-foreground: #221811;
+
+  --border: #ddd6cd;
+  --input: #ddd6cd;
+  --ring: #de7c00;
+  --gold: #da950a;
+  --charcoal: #17100c;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+}
+header {
+  background-color: var(--muted);
+  color: var(--muted-color);
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  position: sticky;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--muted-color);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  font-weight: var(--font-weight-normal);
+}
+.reserve-btn {
+  background-color: var(--primary);
+  color: var(--primary-text-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius-2xl);
+}
+
+#hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: url("./images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-heading {
+  font-size: var(--text-h1);
+  font-weight: var(--font-weight-bold);
+  color: white;
+}
+.hero-para {
+  color: var(--card);
+  line-height: var(--leading-relaxed);
+}
+.buttons {
+  margin: 20px 0;
+}
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--radius-3xl);
+}
+.menu-btn {
+  background-color: var(--primary);
+  color: white;
+  border: 1px solid var(--primary);
+  font-size: var(--text-base);
+}
+.reserve-btn {
+  color: white;
+  border: 1px solid var(--border);
+  font-size: var(--text-base);
+}
+
+#about {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
